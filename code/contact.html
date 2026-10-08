@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Contactez la coopérative Thimdrine pour obtenir des informations ou passer une commande.">
+  <title>Contact | Thimdrine</title>
+  <link rel="icon" href="images/logo.png">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lora:wght@700&amp;family=Source+Sans+3:wght@400;600;700&amp;display=swap">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+
+  <header class="entete">
+    <div class="conteneur entete-contenu">
+      <a class="logo" href="accuiel.html">
+        <img src="../images/logo.png" alt="">
+        Thimdrine
+      </a>
+      <nav class="menu">
+        <a class="actif" href="accuiel.html">Accueil</a>
+        <a href="produits.html">Nos produits</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+<main class="commande-page">
+
+        <div class="commande-container">
+
+            <div class="commande-intro">
+                <p class="section-label">Passer commande</p>
+
+                <h1>Votre commande</h1>
+
+                <p>
+                    Remplissez le formulaire ci-dessous pour commander
+                    nos produits artisanaux.
+                </p>
+            </div>
+
+
+            <form class="commande-form">
+
+                <h2>Vos informations</h2>
+
+                <div class="form-group">
+                    <label for="nom">Nom et prénom</label>
+                    <input
+                        type="text"
+                        id="nom"
+                        name="nom"
+                        placeholder="Votre nom et prénom"
+                        required>
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="telephone">Téléphone</label>
+                        <input
+                            type="tel"
+                            id="telephone"
+                            name="telephone"
+                            placeholder="06 XX XX XX XX"
+                            required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="exemple@email.com">
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="adresse">Adresse de livraison</label>
+                    <input
+                        type="text"
+                        id="adresse"
+                        name="adresse"
+                        placeholder="Votre adresse"
+                        required>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="ville">Ville</label>
+                    <input
+                        type="text"
+                        id="ville"
+                        name="ville"
+                        placeholder="Votre ville"
+                        required>
+                </div>
+
+
+                <h2>Votre commande</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="produit">Produit</label>
+
+                        <select id="produit" name="produit" required>
+
+                            <option value="">
+                                Sélectionner un produit
+                            </option>
+
+                            <option value="miel">
+                                Miel de thym
+                            </option>
+
+                            <option value="huile">
+                                Huile d'olive
+                            </option>
+
+                            <option value="confiture">
+                                Confiture de figue de barbarie
+                            </option>
+
+                        </select>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label for="quantite">Quantité</label>
+
+                        <input
+                            type="number"
+                            id="quantite"
+                            name="quantite"
+                            min="1"
+                            value="1"
+                            required>
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+                    <label for="message">
+                        Message ou précision concernant la commande
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="5"
+                        placeholder="Écrivez votre message ici..."></textarea>
+                </div>
+
+
+                <button type="submit" class="btn-commande">
+                    Confirmer la commande
+                </button>
+
+            </form>
+
+        </div>
+
+    </main>
+
+
+   <footer class="pied">
+    <div class="conteneur pied-colonnes">
+      <div>
+        <h2>Coopérative Thimdrine</h2>
+        <address>
+          Route de Selouane, Nador, Maroc<br>
+          Tél. : <a href="tel:+212536000000">05 36 00 00 00</a><br>
+          E-mail : <a href="mailto:contact@thimdrine.ma">contact@thimdrine.ma</a>
+        </address>
+      </div>
+      <div>
+        <h2>Horaires</h2>
+        <p>Du lundi au samedi<br>de 9 h à 18 h</p>
+      </div>
+      <div>
+        <h2>Plan du site</h2>
+        <ul>
+          <li><a href="accuiel.html">Accueil</a></li>
+          <li><a href="produits.html">Nos produits</a></li>
+          <li><a href="a-propos.html">À propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="copyright">© 2026 Coopérative Thimdrine · Site réalisé à YouCode Nador</p>
+  </footer>
+
+</body>
+</html>
